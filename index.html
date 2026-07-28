@@ -283,6 +283,23 @@
     display: inline-block;
   }
 
+  .btn-donate {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.85rem 2rem;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+
+  .btn-donate:hover { background: #c8622a; }
+
   .btn-primary:hover { background: var(--green); }
 
   .btn-secondary {
@@ -666,6 +683,20 @@
     margin-bottom: 1.5rem;
   }
 
+  .anedot-embed {
+    width: 100%;
+    height: 780px;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(245,240,230,0.12);
+  }
+
+  .anedot-embed iframe {
+    display: block;
+    border: none;
+  }
+
   /* FOOTER */
   footer {
     background: var(--cream-dark);
@@ -787,7 +818,7 @@
     <li><a href="#involve">Get Involved</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Vote November 2026</a>
+  <a href="https://secure.actblue.com/donate/forystek4uniontownship" target="_blank" rel="noopener" class="nav-cta">Donate</a>
   <button class="nav-toggle" id="navtoggle" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -809,6 +840,7 @@
     <p class="hero-sub">Porter County, Indiana &nbsp;·&nbsp; November 2026</p>
     <p class="hero-tagline">Trusted leadership. Fair access. Service for everyone.</p>
     <div class="hero-actions">
+      <a href="https://secure.actblue.com/donate/forystek4uniontownship" target="_blank" rel="noopener" class="btn-donate">Donate</a>
       <a href="#about" class="btn-primary">Meet Angela</a>
       <a href="#involve" class="btn-secondary">Get Involved</a>
     </div>
@@ -944,7 +976,11 @@
       <div class="donate-box reveal">
         <p class="donate-title">Support This Campaign</p>
         <p class="donate-body">This campaign runs on a small budget and a real community. Every dollar goes straight to reaching Union Township voters — signs, outreach, and the basics of an honest local race.</p>
-        <p style="font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;color:rgba(245,240,230,0.65);">Donation link coming soon — email directly in the meantime.</p>
+        <a href="https://secure.actblue.com/donate/forystek4uniontownship" target="_blank" rel="noopener" class="btn-donate">Donate via ActBlue</a>
+        <p style="font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,240,230,0.55);margin:1.5rem 0 0.85rem;">Or donate directly below</p>
+        <div class="anedot-embed">
+          <iframe src="https://secure.anedot.com/forystek-for-union-township-trustee-committee/161d939e-570e-4477-946f-c3fe222f33bd?embed=true" width="100%" height="100%" frameborder="0" title="Donate via Anedot"></iframe>
+        </div>
       </div>
     </div>
   </div>
