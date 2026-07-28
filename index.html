@@ -3,8 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Angela Forystek for Union Township Trustee, Porter County Indiana 2026. Rooted in Wheeler. Fighting for all of us.">
-<title>Angela Forystek — Union Township Trustee 2026</title>
+<meta name="description" content="Angela Forystek is running for Union Township Trustee in Porter County, Indiana. Rooted in Wheeler and Union Township since 1987 — running to make sure every neighbor knows what help they're owed and can actually get it.">
+<meta name="theme-color" content="#0d1f3c">
+<title>Angela Forystek for Union Township Trustee | Porter County, IN 2026</title>
+<link rel="canonical" href="https://www.forystekforuniontownship.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Angela Forystek for Union Township Trustee">
+<meta property="og:description" content="Rooted in Wheeler and Union Township since 1987. Running to make township government reachable, honest, and actually useful to the people who live here.">
+<meta property="og:image" content="https://www.forystekforuniontownship.com/og-image.jpg">
+<meta property="og:url" content="https://www.forystekforuniontownship.com/">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Angela Forystek for Union Township Trustee">
+<meta name="twitter:description" content="Rooted in Wheeler and Union Township since 1987. Running for a trustee's office that's reachable, honest, and actually useful.">
+<meta name="twitter:image" content="https://www.forystekforuniontownship.com/og-image.jpg">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230d1f3c'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-weight='900' font-size='30' fill='%23e07b39' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -138,6 +159,48 @@
     width: 100%;
     position: relative;
     z-index: 2;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--orange);
+    text-stroke: 2px var(--orange);
+    display: block;
+    transform: rotate(-2deg);
+    margin-bottom: 0.25rem;
+    line-height: 1;
+  }
+
+  .hero-for {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--green);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 20px;
+    padding: 0.35rem 0.9rem;
+    margin-bottom: 1.5rem;
+    transform: rotate(-1deg);
   }
 
   .hero-name {
@@ -321,6 +384,46 @@
     line-height: 1.5;
   }
 
+  /* STATEMENT BAND */
+  #statement {
+    background: var(--cream-dark);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(13,31,60,0.06);
+    border-bottom: 1px solid rgba(13,31,60,0.06);
+  }
+
+  .statement-quote {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    line-height: 1.4;
+    color: var(--green);
+  }
+
+  .statement-mark {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--orange);
+    opacity: 0.55;
+    line-height: 0.5;
+    margin-bottom: 0.75rem;
+  }
+
+  .statement-attr {
+    margin-top: 1.25rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
   /* PLATFORM */
   #platform {
     background: var(--navy);
@@ -351,6 +454,7 @@
   .platform-card:nth-child(2) { border-top-color: var(--orange); }
   .platform-card:nth-child(3) { border-top-color: var(--orange); }
   .platform-card:nth-child(4) { border-top-color: var(--green-bright); }
+  .platform-card:nth-child(5) { border-top-color: var(--orange); }
 
   .card-title {
     font-family: 'Barlow Condensed', sans-serif;
@@ -468,6 +572,26 @@
     outline: 3px solid var(--orange);
     outline-offset: 3px;
     border-radius: 2px;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background: var(--navy);
+    color: var(--cream);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.25rem;
+    z-index: 200;
+    border-radius: 2px;
+  }
+
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
   }
 
   /* CONTACT */
@@ -643,9 +767,16 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
 </style>
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <nav>
   <a href="#hero" class="nav-name">Forystek</a>
@@ -663,18 +794,21 @@
   </button>
 </nav>
 
+<main id="main">
 <section id="hero">
   <div class="hero-top-rule"></div>
   <div class="hero-inner">
+    <p class="hero-eyebrow">Elect</p>
     <h1 class="hero-name">FORYSTEK</h1>
+    <span class="hero-for">For Union Township Trustee</span>
+    <span class="hero-badge">Rooted in Wheeler since 1987</span>
     <div class="hero-star-row">
       <div class="hero-star-line"></div>
       <span class="hero-stars">★ ★ ★</span>
       <div class="hero-star-line"></div>
     </div>
-    <p class="hero-office">Union Township Trustee</p>
-    <p class="hero-sub">Porter County, Indiana &nbsp;·&nbsp; 2026</p>
-    <p class="hero-tagline">Rooted in Wheeler. Fighting for all of us.</p>
+    <p class="hero-sub">Porter County, Indiana &nbsp;·&nbsp; November 2026</p>
+    <p class="hero-tagline">Trusted leadership. Fair access. Service for everyone.</p>
     <div class="hero-actions">
       <a href="#about" class="btn-primary">Meet Angela</a>
       <a href="#involve" class="btn-secondary">Get Involved</a>
@@ -689,14 +823,14 @@
     <h2 class="section-title reveal">A Neighbor Who<br>Knows This Place</h2>
     <div class="section-rule reveal"></div>
     <div class="about-body reveal">
-      <p>Union Township is a small, tight-knit community where people know each other, have history with each other, and do not always have the same access to the same resources or information. A trustee who pretends those differences do not exist is not serving everyone. Just the ones who already have access.</p>
-      <p>I have lived here for thirty years. I am a wife, a mother of three, and a real estate professional who spent six years watching housing affordability climb past what working families in this community can reach. I went back to school for a Master of Public Administration because I wanted to understand how systems actually work and where change is genuinely possible.</p>
-      <p>I am running because this office does real things for real people. It determines whether a neighbor in crisis gets help or gets turned away. It stewards the cemeteries where our community's history is buried. It manages public money on behalf of every taxpayer in this township regardless of how they vote.</p>
-      <p>I am not running on what I have accomplished. I am running on what I intend to do and who I will show up for when I get there.</p>
+      <p>I've called Union Township home since 1987, and my family goes back generations here. My husband and I met back in grade school, and together we've planted and grown our own roots here while raising our kids. I come from blue-collar, service-minded people, and that's shaped how I see this work. But this path is mine to tell.</p>
+      <p>I started working at fifteen at Deep River Waterpark and never really stopped. Nannying, restaurants, sales, whatever kept things moving while I finished my Business Administration degree at Ivy Tech and Purdue Northwest and built a career in marketing and business development for small local entrepreneurs. I became a mom in 2015. Around that same time my grandmother, a longtime secretary for U.S. Steel, was diagnosed with Parkinson's. I became her primary caregiver until she passed in 2017. My youngest was born in 2022. Through all of it I kept working, kept learning, kept showing up. That is just what you do.</p>
+      <p>I got into real estate in January 2020 and watched the housing market change in real time. That sent me back to school for my Master of Public Administration at Claremont Lincoln University. I did not want just an opinion. I wanted the tools to understand what was actually happening and what could be done about it. I finished that degree while raising three kids and running a business.</p>
+      <p>I did not inherit this path. I built it one job and one degree at a time and I am still building. Some families in this township are doing fine. Others are counting every dollar. This office has to work for both and I know what both feel like. I am proud to run as a Democrat and have voted that way most of my life. But this job has never really been about that. It is about showing up for your neighbors and doing the work right.</p>
     </div>
     <div class="about-stats reveal">
       <div>
-        <div class="stat-num">30</div>
+        <div class="stat-num">39</div>
         <div class="stat-label">Years rooted in<br>Union Township</div>
       </div>
       <div>
@@ -711,27 +845,38 @@
   </div>
 </section>
 
+<section id="statement">
+  <span class="statement-mark reveal" aria-hidden="true">&ldquo;</span>
+  <p class="statement-quote reveal">I did not inherit this path. I built it one job and one degree at a time — and I am still building.</p>
+  <p class="statement-attr reveal">— Angela Forystek</p>
+</section>
+
 <section id="platform">
   <div class="section-inner">
     <p class="section-label reveal">Platform</p>
-    <h2 class="section-title reveal">What I Am Here to Do</h2>
+    <h2 class="section-title reveal">What I'm Here to Do</h2>
     <div class="section-rule-orange reveal"></div>
+    <p class="reveal" style="font-size:1rem;color:rgba(245,240,230,0.82);max-width:600px;line-height:1.8;margin-bottom:2rem;">This office serves every household in the township — the ones doing just fine right now, and the ones feeling every bill. That work isn't Democrat or Republican. It's just work that has to get done well.</p>
     <div class="platform-grid reveal">
       <div class="platform-card">
         <p class="card-title">Housing and Community Access</p>
-        <p class="card-body">Township assistance exists to help residents through housing instability, utility shutoffs, medical hardship, and other crises. Too many people do not know they can ask for it. I will make sure they do, and I will make sure the process is approachable for everyone who qualifies.</p>
+        <p class="card-body">Township assistance exists for residents facing housing instability, utility shutoffs, and medical hardship — most people don't know it's there, whether they've never needed it or need it right now. I'll make sure they do, and make the process simple enough that qualifying for help isn't a job in itself.</p>
       </div>
       <div class="platform-card">
         <p class="card-title">Environmental Responsibility</p>
-        <p class="card-body">The green spaces, wetlands, and natural areas in this region belong to the people who live here. Responsible land stewardship means planning for the long term, not just the next approval cycle or the next outside investment interest.</p>
+        <p class="card-body">The wetlands and green spaces here belong to the people who live here, not to whoever's next in line with a development proposal. Responsible stewardship means planning for the next generation, not just the next approval cycle.</p>
       </div>
       <div class="platform-card">
         <p class="card-title">Open and Honest Government</p>
-        <p class="card-body">The trustee office manages public money on behalf of every resident regardless of how they vote. That means clear communication, records that are actually accessible, and a door that is genuinely open rather than just open in name.</p>
+        <p class="card-body">This office manages public money for every resident, regardless of how they vote. That means plain-language communication, records anyone can actually find, and a door that's open in practice — not just on a sign.</p>
       </div>
       <div class="platform-card">
         <p class="card-title">Civic Knowledge and Connection</p>
-        <p class="card-body">People make better decisions when they understand the systems that affect them. Part of this job is helping residents know what resources they have, what their rights are, and how local government actually works.</p>
+        <p class="card-body">People make better decisions when they understand the systems that affect them. Part of this job is making sure residents know what they're entitled to, what their rights are, and how to actually use this office.</p>
+      </div>
+      <div class="platform-card">
+        <p class="card-title">A Voice for This Township</p>
+        <p class="card-body">Union Township is small, but that's no reason for it to get overlooked. I'll speak up for this township in the county and state-level rooms where the decisions that actually affect us get made — not just in our own meetings.</p>
       </div>
     </div>
   </div>
@@ -742,13 +887,13 @@
     <p class="section-label reveal">The Office</p>
     <h2 class="section-title reveal">What the Trustee<br>Is Responsible For</h2>
     <div class="section-rule reveal"></div>
-    <p class="trustee-body reveal">Most residents have never had a reason to know what this office does. That is worth changing. The Township Trustee is the closest point of government to where people actually live, and the responsibilities are more concrete and more consequential than most people realize.</p>
+    <p class="trustee-body reveal">Most residents have never had a reason to know what this office does — that's worth changing. The Township Trustee is the closest point of government to where people actually live, and the responsibilities are more concrete, and more consequential, than most people realize.</p>
     <ul class="trustee-list reveal">
-      <li><strong>Township Assistance</strong> — Emergency financial help for residents in genuine need. Shelter, utilities, food, medical expenses, and burial costs. If you or someone you know needs help, this program exists and you have a right to ask for it.</li>
-      <li><strong>Cemetery Stewardship</strong> — The trustee is responsible for maintaining township cemeteries, including abandoned and neglected burial grounds. This is an act of respect for the community's history and the people who came before us.</li>
-      <li><strong>Fire Protection Oversight</strong> — Ensuring fire protection services are in place and the township is covered.</li>
-      <li><strong>Township Property</strong> — Managing and maintaining township owned land and facilities on behalf of every resident.</li>
-      <li><strong>Budget Administration</strong> — Stewarding public funds carefully and accounting to every taxpayer in the township regardless of politics.</li>
+      <li><strong>Township Assistance</strong> — Emergency help for residents in genuine need: shelter, utilities, food, medical expenses, burial costs. If you or someone you know needs it, this program exists and you have a right to ask for it.</li>
+      <li><strong>Cemetery Stewardship</strong> — Maintaining township cemeteries, including abandoned and neglected burial grounds, as an act of respect for the people who came before us.</li>
+      <li><strong>Fire Protection Oversight</strong> — Making sure fire protection services are in place and the township is fully covered.</li>
+      <li><strong>Township Property</strong> — Managing and maintaining township-owned land and facilities on behalf of every resident.</li>
+      <li><strong>Budget Administration</strong> — Stewarding public funds carefully and accounting to every taxpayer in the township, regardless of politics.</li>
       <li><strong>Community Navigation</strong> — Being someone residents can actually reach when they need help understanding their options, finding resources, or figuring out which door to knock on first.</li>
     </ul>
   </div>
@@ -759,22 +904,22 @@
     <p class="section-label reveal">Get Involved</p>
     <h2 class="section-title reveal">Local Races Are Won<br>by Neighbors</h2>
     <div class="section-rule reveal"></div>
-    <p class="reveal" style="font-size:1rem;color:var(--navy);opacity:0.75;max-width:580px;line-height:1.8;margin-bottom:2rem;">This is a township race. It will be decided by a small number of people who paid attention and showed up.</p>
+    <p class="reveal" style="font-size:1rem;color:var(--navy);opacity:0.75;max-width:580px;line-height:1.8;margin-bottom:2rem;">This is a township race. It gets decided by a small number of people who paid attention and showed up — that can be us.</p>
     <div class="involve-grid">
       <div class="involve-card reveal">
         <div class="involve-num">01</div>
         <p class="involve-title">Spread the Word</p>
-        <p class="involve-body">Tell one neighbor who has not heard this name. Share this page. Talk about what the trustee office does and why the person holding it matters.</p>
+        <p class="involve-body">Tell one neighbor who hasn't heard this name yet. Share this page. Talk about what the trustee office actually does and why it matters who holds it.</p>
       </div>
       <div class="involve-card reveal">
         <div class="involve-num">02</div>
         <p class="involve-title">Vote in November</p>
-        <p class="involve-body">Township races turn on turnout. A few hundred votes can decide this. If you live in Union Township, your vote here carries more weight than you have probably been told.</p>
+        <p class="involve-body">Township races turn on turnout — a few hundred votes can decide this one. If you live in Union Township, your vote here carries more weight than you've probably been told.</p>
       </div>
       <div class="involve-card reveal">
         <div class="involve-num">03</div>
         <p class="involve-title">Get in Touch</p>
-        <p class="involve-body">If you want to volunteer, share your expertise, or just have a conversation about what this community needs, reach out. There is no form. Just a real email address below.</p>
+        <p class="involve-body">Want to volunteer, share your expertise, or just talk about what this community needs? Reach out. No form, no fifteen fields — just a real email address below.</p>
       </div>
     </div>
   </div>
@@ -787,7 +932,7 @@
     <div class="section-rule-orange reveal"></div>
     <div class="contact-grid">
       <div class="reveal">
-        <p>No staff. No form with fifteen fields. Just a neighbor who is running for office and wants to hear from you.</p>
+        <p>No staff. No gatekeeping. Just a neighbor running for office who wants to hear from you.</p>
         <a href="mailto:forystekforuniontownship@gmail.com" class="contact-link">
           <span class="contact-dot"></span>
           forystekforuniontownship@gmail.com
@@ -799,12 +944,13 @@
       </div>
       <div class="donate-box reveal">
         <p class="donate-title">Support This Campaign</p>
-        <p class="donate-body">This campaign runs on a small budget and a real community. Every dollar goes toward reaching Union Township voters. Signs, outreach, and the basics of an honest local race.</p>
-        <p style="font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;color:rgba(245,240,230,0.65);">Donation link coming soon. Email directly in the meantime.</p>
+        <p class="donate-body">This campaign runs on a small budget and a real community. Every dollar goes straight to reaching Union Township voters — signs, outreach, and the basics of an honest local race.</p>
+        <p style="font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;color:rgba(245,240,230,0.65);">Donation link coming soon — email directly in the meantime.</p>
       </div>
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <p class="footer-name">FORYSTEK</p>
@@ -813,8 +959,8 @@
     <span class="footer-stars">★ ★ ★</span>
     <div class="footer-star-line"></div>
   </div>
-  <p class="footer-office">Union Township Trustee</p>
-  <p class="footer-tagline">Rooted in Wheeler. Fighting for all of us.</p>
+  <p class="footer-office">For Union Township Trustee</p>
+  <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:0.85rem;color:var(--navy);opacity:0.55;margin-bottom:1.5rem;">Your neighbor. Your trustee. November 2026.</p>
   <p class="footer-disc">
     Paid for by Forystek For Union Township Trustee Committee<br>
     Union Township · Porter County · Indiana · 2026 · Democratic Candidate
