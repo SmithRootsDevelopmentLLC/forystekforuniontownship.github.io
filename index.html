@@ -128,30 +128,32 @@
   #hero {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 80px 2rem 4rem;
     text-align: center;
-    position: relative;
     background: var(--cream);
   }
 
   .hero-top-rule {
-    position: absolute;
-    top: 120px;
-    left: 10%; right: 10%;
+    width: 100%;
+    max-width: 620px;
     height: 2px;
     background: var(--orange);
     opacity: 0.7;
+    margin-bottom: 2.5rem;
+    flex-shrink: 0;
   }
 
   .hero-bottom-rule {
-    position: absolute;
-    bottom: 140px;
-    left: 10%; right: 10%;
+    width: 100%;
+    max-width: 620px;
     height: 2px;
     background: var(--orange);
     opacity: 0.7;
+    margin-top: 2.5rem;
+    flex-shrink: 0;
   }
 
   .hero-inner {
@@ -783,8 +785,8 @@
     .involve-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .about-stats { grid-template-columns: 1fr 1fr; }
-    .hero-top-rule { top: 90px; }
-    .hero-bottom-rule { bottom: 100px; }
+    .hero-top-rule { margin-bottom: 1.75rem; }
+    .hero-bottom-rule { margin-top: 1.75rem; }
   }
 
   @media (max-width: 480px) {
